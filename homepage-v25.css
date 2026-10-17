@@ -1,0 +1,14 @@
+/* V25: single-screen homepage; do not affect other pages. */
+html:has(body.original-home){height:100%;overflow:hidden!important}
+body.original-home{height:100svh!important;min-height:0!important;max-height:100svh!important;overflow:hidden!important;padding:0!important}
+.original-home .instruction-stage{height:calc(100svh - 50px)!important;min-height:0!important;max-height:calc(100svh - 50px)!important;overflow:hidden!important}
+.original-home .instruction-table{padding-top:clamp(24px,9vh,82px)!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;height:calc(100svh - 85px)!important;max-height:calc(100svh - 85px)!important}
+.original-home .instruction-tools{top:auto!important;bottom:calc(50px + 7vh)!important}
+@media(max-width:767px){
+ body.original-home{height:100svh!important;max-height:100svh!important}
+ .original-home .instruction-stage{height:calc(100svh - 74px)!important;max-height:calc(100svh - 74px)!important;overflow:auto!important;padding:18px 18px 10px!important;scrollbar-width:none}
+ .original-home .instruction-stage::-webkit-scrollbar{display:none}
+ .original-home .instruction-table{height:auto!important;max-height:none!important;padding:0!important;grid-template-rows:none!important}
+ .original-home .instruction-value{padding-bottom:clamp(18px,4vh,38px)!important}
+ .original-home .instruction-tools{bottom:auto!important}
+}
