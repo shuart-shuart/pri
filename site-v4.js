@@ -1,1 +1,14 @@
 document.addEventListener('DOMContentLoaded',()=>{const filter=document.getElementById('filter'), entries=[...document.querySelectorAll('.archive-entry')],count=document.getElementById('visible-count');let visible=[];function recalc(){const q=(filter?.value||'').toLocaleLowerCase();visible=entries.filter(e=>{const ok=e.textContent.toLocaleLowerCase().includes(q);e.hidden=!ok;return ok});if(count)count.textContent=visible.length+' instructions'}if(filter){filter.addEventListener('input',recalc);recalc()}function jump(delta){if(!visible.length)return;const pos=visible.findIndex(e=>e.getBoundingClientRect().top>=-10);let ix=pos<0?visible.length-1:pos;ix=Math.max(0,Math.min(visible.length-1,ix+delta));visible[ix].scrollIntoView({behavior:'smooth',block:'start'})}document.getElementById('up10')?.addEventListener('click',()=>jump(-10));document.getElementById('down10')?.addEventListener('click',()=>jump(10));if(location.hash){const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.querySelector('details'))target.querySelector('details').open=true;}});
+document.addEventListener('DOMContentLoaded',()=>{
+  const contributorDetails=[...document.querySelectorAll('body.contributors-page .contributor-details')];
+  contributorDetails.forEach(detail=>{
+    detail.addEventListener('toggle',()=>{
+      if(detail.open) contributorDetails.forEach(other=>{if(other!==detail) other.open=false;});
+    });
+  });
+  if(location.hash){
+    const target=document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const panel=target?.querySelector('.contributor-details');
+    if(panel) panel.open=true;
+  }
+});
