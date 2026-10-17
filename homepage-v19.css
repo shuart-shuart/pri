@@ -1,0 +1,32 @@
+/* V19: calibrate desktop homepage to the approved original reference.
+   Grey labels start near y=20/275/530px; black phrases start below each label,
+   around x=30% of the page. Rows grow if a longer instruction needs space. */
+@media (min-width: 768px) {
+  .original-home .instruction-table {
+    top: 20px!important;
+    height: auto!important;
+    align-content: start!important;
+    grid-template-columns: 30% minmax(0, 70%)!important;
+    grid-template-rows: repeat(3, minmax(255px, auto))!important;
+    row-gap: 0!important;
+  }
+  .original-home .instruction-label {
+    font-size: clamp(28px,2.3vw,38px)!important;
+    padding-top:0!important;
+  }
+  .original-home .instruction-value {
+    font-size: clamp(28px,2.3vw,38px)!important;
+    padding-top: 82px!important;
+    padding-right: 16px!important;
+    line-height: 1.32!important;
+    letter-spacing:0!important;
+  }
+  .original-home .instruction-tools { bottom: 20px!important; }
+}
+@media (min-width:768px) and (max-height:790px) {
+  .original-home .instruction-table { grid-template-rows:repeat(3,minmax(205px,auto))!important; }
+  .original-home .instruction-value { padding-top:clamp(43px,8vh,75px)!important; }
+}
+@media (max-width:767px) {
+  .original-home .instruction-table { grid-template-rows:none!important; height:auto!important; }
+}
