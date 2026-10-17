@@ -1,0 +1,31 @@
+/* V9: source-derived layout. Derived from archived Elementor post-34.css, post-18.css, post-95.css.
+   This is a translation to our static DOM, not a wholesale loading of incompatible Elementor CSS. */
+:root { --archive-background:#FEFFC9; --archive-link-grey:#C6C6C6; --archive-ink:#000; --archive-type-primary:28px; --archive-type-secondary:15px; }
+html, body, body.original-home, body.restored-page { background-color:var(--archive-background); color:var(--archive-ink); }
+body, button, input { font-family:'Standard',Arial,Helvetica,sans-serif; letter-spacing:.03em; }
+/* Elementor kit typography: original desktop primary 28px bold, 1.55em, .02em tracking. */
+.original-home .instruction-table { grid-template-columns:30% minmax(0,70%); grid-template-rows:repeat(3,minmax(23vh,auto)); row-gap:0; }
+.original-home .instruction-label {font-size:var(--archive-type-primary);font-weight:700;line-height:1.55;letter-spacing:.02em;align-self:start;padding-top:0;}
+.original-home .instruction-value {font-size:var(--archive-type-primary);font-weight:700;line-height:1.55;letter-spacing:.02em;overflow-wrap:anywhere;}
+/* Original post-18.css labels and content in separate 30% and 70% columns,
+   23vh row rhythm in desktop archived home page. */
+.original-home .instruction-stage {padding:30px clamp(25px,3vw,50px) calc(var(--footer-height) + 45px);}
+.original-home .instruction-tools a,.original-home .instruction-tools button {font-size:15px;font-weight:700;letter-spacing:.03em;}
+/* Original post-95.css footer uses 1px grey lower border and fixed bottom. */
+.original-footer,.restored-page .original-footer {background:#FEFFC9!important; border-top:1px solid #C6C6C6!important;position:fixed!important;bottom:0;}
+.original-footer nav a {color:#C6C6C6;}
+.original-footer nav a:hover,.original-footer nav a[aria-current=page]{color:#000;}
+/* Ensure historical map remains a neutral footprint, not an invented set of markers. */
+.historic-map-slot {width:100%;height:94vh;background:#C6C6C6;}
+@media(max-width:1024px){:root{--archive-type-primary:22px;--archive-type-secondary:14px}}
+@media(max-width:767px){
+ :root{--archive-type-primary:18px;--archive-type-secondary:12px}
+ .original-home .instruction-table {grid-template-columns:30% minmax(0,70%);grid-template-rows:repeat(3,minmax(23vh,auto));gap:0}
+ .original-home .instruction-label,.original-home .instruction-value{font-size:var(--archive-type-primary);line-height:1.55;letter-spacing:.02em;align-self:start;padding:0}
+ .original-home .instruction-stage{padding:30px 25px calc(var(--footer-height) + 30px);}
+ .original-home .instruction-tools a,.original-home .instruction-tools button{font-size:12px;}
+}
+@media(max-width:430px){
+ .original-home .instruction-table {grid-template-columns:30% minmax(0,70%);grid-template-rows:repeat(3,minmax(22vh,auto));}
+ .original-home .instruction-value {word-break:normal;}
+}

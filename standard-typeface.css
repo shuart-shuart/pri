@@ -1,0 +1,6 @@
+/* V12: Standard by Bryce Wilner, served via Font Library (SIL OFL).
+   This stylesheet stays external: no font binaries are redistributed.
+   In an offline browser session, the site's font stack falls back to Arial. */
+:root,html,body,button,input,textarea,select{font-family:'StandardBook','Standard',Arial,Helvetica,sans-serif!important}
+strong,b,h1,h2,h3,h4,h5,h6,.original-home .instruction-value,.original-home .instruction-label,.original-home .instruction-tools a,.original-home .instruction-tools button,.restored-page .original-instruction-row,.restored-page .contributor-details summary{font-family:'StandardBold','StandardBook','Standard',Arial,Helvetica,sans-serif!important}
+/* Preserve the approved map placeholder rather than invent unverified pins. */

@@ -1,0 +1,7 @@
+/* V14 verified SAW and NAC marks (user-supplied original assets). */
+.restored-page .project-logos{display:flex;align-items:flex-start;justify-content:flex-start;gap:clamp(26px,4vw,62px);padding:10px 0 125px;min-height:170px}
+.restored-page .project-logos .project-logo{display:flex;flex-direction:column;align-items:flex-start;gap:24px;min-width:0;font-size:14px;font-weight:700;line-height:1.25}
+.restored-page .project-logos .project-logo img{display:block;object-fit:contain;object-position:left top;width:auto;height:auto;max-width:100%}
+.restored-page .project-logos .project-logo:first-child img{width:155px}
+.restored-page .project-logos .project-logo:nth-child(2) img{width:192px}
+@media(max-width:480px){.restored-page .project-logos{gap:22px;flex-wrap:wrap}.restored-page .project-logos .project-logo:first-child img{width:125px}.restored-page .project-logos .project-logo:nth-child(2) img{width:160px}}

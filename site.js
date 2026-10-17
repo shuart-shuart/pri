@@ -1,0 +1,1 @@
+const input=document.querySelector('#filter');if(input){input.addEventListener('input',()=>{const q=input.value.trim().toLocaleLowerCase();document.querySelectorAll('.archive-entry').forEach(el=>{el.hidden=!el.textContent.toLocaleLowerCase().includes(q)})})}

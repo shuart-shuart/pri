@@ -1,0 +1,76 @@
+/* V11: Screenshot-aligned type and spatial rhythm. 2026-10-18.
+   The supplied 1692 x 895 screenshot is authoritative for homepage styling.
+   Do not override the previously verified Standard/Arial fallback glyphs. */
+:root{--screenshot-paper:#FEFFC9;--screenshot-ink:#000000;--screenshot-muted:#C6C6C6}
+html,body{background:var(--screenshot-paper)!important;color:var(--screenshot-ink)}
+body,body button,body input,body a,body h1,body h2,body h3,body p,
+.restored-page,.restored-page *:not(svg):not(path){font-family:'Standard',Arial,Helvetica,sans-serif!important}
+/* Screenshot: left labels ~20px from the edge; copy starts at 30.4% width.
+   Desktop instruction rows occupy nearly one third of the visible screen each. */
+body.original-home{padding:0!important;display:block;min-height:100vh}
+.original-home .instruction-stage{
+  position:relative!important;display:block!important;box-sizing:border-box;
+  width:100%;height:calc(100vh + 145px);min-height:calc(100vh + 145px)!important;
+  padding:0!important;margin:0!important;
+}
+.original-home .instruction-table{
+  position:absolute;top:20px;left:20px;right:20px;
+  width:calc(100% - 40px);max-width:none;height:calc(100vh - 65px);
+  display:grid;grid-template-columns:30% minmax(0,70%);
+  grid-template-rows:repeat(3,1fr);align-items:stretch;
+  row-gap:0;column-gap:0;margin:0;padding:0;
+}
+.original-home .instruction-label{
+  font-family:inherit;font-size:clamp(23px,2.28vw,38px);font-weight:700;
+  line-height:1.2;letter-spacing:.01em;color:var(--screenshot-muted);
+  text-align:left;align-self:start;padding:0;margin:0;
+}
+.original-home .instruction-value{
+  font-family:inherit;font-size:clamp(23px,2.28vw,38px);font-weight:700;
+  line-height:1.5;letter-spacing:.01em;color:#000;
+  text-align:left;align-self:start;padding:clamp(40px,10.1vh,100px) 20px 0 0;
+  margin:0;width:100%;max-width:none;overflow-wrap:normal;
+}
+.original-home .instruction-tools{
+  position:fixed!important;right:3.5%;bottom:19px;top:auto!important;
+  z-index:20;display:flex;align-items:center;gap:clamp(25px,3.6vw,60px);
+  margin:0;padding:0;white-space:nowrap;
+}
+.original-home .instruction-tools a,.original-home .instruction-tools button{
+  font-family:inherit;font-size:clamp(14px,1.2vw,20px);font-weight:700;
+  line-height:1.1;letter-spacing:0;color:var(--screenshot-muted);
+  padding:2px;border:0;background:transparent;text-decoration:none;
+}
+.original-home .homepage-disclaimer{
+  position:absolute;top:calc(100vh + 20px);left:50%;transform:translateX(-50%);
+  margin:0;padding:0 20px;max-width:960px;width:100%;box-sizing:border-box;
+  font-size:13px;font-weight:400;line-height:1.55;text-align:left;color:#000;
+}
+/* In the supplied homepage screenshot, the only bottom-right controls are
+   info / next / list. Make the four-section site footer available below the
+   homepage's disclaimer rather than superimposed on this first-screen composition. */
+.original-home .original-footer{position:relative!important;bottom:auto!important;margin:0!important}
+/* Other pages use the exact same type family and black/grey relationship. */
+.restored-page{letter-spacing:.01em}
+.restored-page h1,.restored-page h2,.restored-page h3,
+.restored-page .original-instruction-row,.restored-page .contributor-details summary,
+.restored-page .detail-values div{font-weight:700!important;letter-spacing:.01em!important}
+.restored-page .original-footer .footer-brand,
+.restored-page .original-footer nav a{font-weight:700;letter-spacing:.01em}
+.restored-page .contributor-details summary:not(:hover),
+.restored-page .original-instruction-row:not(.is-active){color:var(--screenshot-muted)}
+.restored-page .contributor-details[open] summary,
+.restored-page .original-instruction-row.is-active{color:#000}
+@media(max-width:767px){
+ .original-home .instruction-stage{height:calc(100svh + 165px);min-height:calc(100svh + 165px)!important}
+ .original-home .instruction-table{top:20px;left:16px;right:16px;width:calc(100% - 32px);height:calc(100svh - 80px);grid-template-columns:29% 71%}
+ .original-home .instruction-label,.original-home .instruction-value{font-size:clamp(17px,4vw,27px);line-height:1.35;letter-spacing:.01em}
+ .original-home .instruction-value{padding-top:clamp(38px,8svh,75px);padding-right:4px;overflow-wrap:anywhere}
+ .original-home .instruction-tools{right:18px;bottom:14px;gap:20px}
+ .original-home .instruction-tools a,.original-home .instruction-tools button{font-size:13px}
+ .original-home .homepage-disclaimer{top:calc(100svh + 20px);font-size:12px;padding:0 16px}
+}
+@media(min-width:768px) and (max-height:600px){
+ .original-home .instruction-value{padding-top:7vh}
+ .original-home .instruction-table{height:calc(100vh - 45px)}
+}

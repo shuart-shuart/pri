@@ -1,0 +1,46 @@
+/* V10: consistent archive type system; footer and top-of-page positioning.
+   Source: recovered post-18.css and post-95.css, supplemented by present page structure.
+   Homepage instruction typography is deliberately NOT overridden. */
+:root{--footer-height:47px;--footer-mobile-height:38px;--archive-gutter:50px}
+html,body{font-family:'Standard',Arial,Helvetica,sans-serif}
+.restored-page, .restored-page main, .restored-page h1, .restored-page h2,
+.restored-page h3, .restored-page p, .restored-page a, .restored-page button,
+.restored-page input, .restored-page summary, .original-footer,
+.original-footer a, .original-footer nav a {font-family:'Standard',Arial,Helvetica,sans-serif}
+/* Archived Elementor nav: 15px vertical link padding; 51px horizontal item margin.
+   The 47px bar is the nominal 17px type line plus 2 x 15px padding. */
+.original-footer,.restored-page .original-footer{height:47px;min-height:47px;max-height:47px;
+ padding:0 var(--archive-gutter)!important;gap:0;justify-content:flex-start;
+ align-items:center;flex-direction:row;flex-wrap:nowrap;white-space:nowrap;
+ background:#FEFFC9!important;border-top:1px solid #C6C6C6!important}
+.original-footer .footer-brand{font-size:15px;line-height:17px;font-weight:400;flex:none;margin-right:51px}
+.original-footer nav{display:flex;align-items:center;flex-wrap:nowrap;gap:51px}
+.original-footer nav a{display:inline-flex;align-items:center;line-height:17px;font-size:15px;
+ padding:15px 0;letter-spacing:.03em;color:#C6C6C6;font-weight:400}
+.original-footer nav a[aria-current=page]{color:#000}
+body.original-home,body.restored-page{padding-bottom:var(--footer-height)}
+/* No separate floating header is present on the archived homepage. For the
+   instructions list the selected entry header begins at the page top. */
+.original-instructions-layout{padding-top:0}
+.archive-topline{top:0;min-height:47px;padding:13px 0 12px;margin:0;
+ align-items:center;background:#FEFFC9;border-bottom:0}
+.restored-page .archive-page{padding-top:0}
+.restored-page .page-intro{padding-top:0}
+.detail-heading{padding-top:18px}
+@media(max-width:1024px){:root{--archive-gutter:30px}
+ .original-footer .footer-brand{margin-right:30px}
+ .original-footer nav{gap:30px}
+ .original-footer nav a,.original-footer .footer-brand{font-size:14px}}
+@media(max-width:767px){:root{--footer-height:38px;--archive-gutter:25px}
+ .original-footer,.restored-page .original-footer{height:38px;min-height:38px;max-height:38px;
+ padding:0 25px!important;gap:0;flex-direction:row;align-items:center;justify-content:flex-start}
+ .original-footer .footer-brand{font-size:12px;margin-right:18px;line-height:16px}
+ .original-footer nav{gap:clamp(9px,2.8vw,18px);flex-wrap:nowrap}
+ .original-footer nav a{font-size:clamp(10px,2.6vw,12px);padding:10px 0;line-height:16px}
+ .archive-topline{top:0;padding:8px 0 10px;min-height:38px}
+ .original-instructions-layout{padding-top:0}
+ .restored-page .archive-page{padding-top:0}
+}
+@media(max-width:370px){.original-footer,.restored-page .original-footer{padding-left:14px!important;padding-right:14px!important}
+ .original-footer .footer-brand{margin-right:11px}
+ .original-footer nav{gap:8px}.original-footer nav a{font-size:10px;letter-spacing:0}}

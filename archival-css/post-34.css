@@ -1,0 +1,45 @@
+.elementor-kit-34{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-typography-primary-font-family:"Standard";--e-global-typography-primary-font-size:28px;--e-global-typography-primary-font-weight:bold;--e-global-typography-primary-line-height:1.55em;--e-global-typography-primary-letter-spacing:0.02em;--e-global-typography-secondary-font-family:"Standard";--e-global-typography-secondary-font-size:15px;--e-global-typography-secondary-font-weight:bold;--e-global-typography-secondary-letter-spacing:0.03em;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500;color:#000000;font-family:"Standard", Sans-serif;font-size:15px;font-weight:bold;letter-spacing:0.03em;background-color:#FEFFC9;}.elementor-kit-34 a{color:#C6C6C6;}.elementor-kit-34 a:hover{color:#020101BF;}.elementor-kit-34 h2{font-family:"Standard", Sans-serif;font-size:28px;font-weight:bold;line-height:1.55em;letter-spacing:0.02em;}.elementor-kit-34 button,.elementor-kit-34 input[type="button"],.elementor-kit-34 input[type="submit"],.elementor-kit-34 .elementor-button{color:#000000;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-bottom:20px;}.elementor-element{--widgets-spacing:20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-kit-34 e-page-transition{background-color:#FFBC7D;}.site-header{padding-right:0px;padding-left:0px;}@media(max-width:1200px){.elementor-kit-34{--e-global-typography-primary-font-size:28px;--e-global-typography-secondary-font-size:15px;font-size:15px;letter-spacing:0.03em;}.elementor-kit-34 h2{font-size:28px;}}@media(max-width:1024px){.elementor-kit-34{--e-global-typography-primary-font-size:28px;--e-global-typography-secondary-font-size:15px;--e-global-typography-secondary-letter-spacing:0.015em;font-size:15px;letter-spacing:0.03em;}.elementor-kit-34 h2{font-size:28px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:880px){.elementor-kit-34{--e-global-typography-primary-font-size:22px;--e-global-typography-secondary-font-size:14px;--e-global-typography-secondary-letter-spacing:0.03em;font-size:14px;letter-spacing:0.03px;}.elementor-kit-34 h2{font-size:22px;}}@media(max-width:767px){.elementor-kit-34{--e-global-typography-primary-font-size:18px;--e-global-typography-primary-letter-spacing:0.02em;--e-global-typography-secondary-font-size:12px;--e-global-typography-secondary-letter-spacing:0.02em;font-size:12px;letter-spacing:0.02em;}.elementor-kit-34 h2{font-size:18px;letter-spacing:0.015em;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Standard';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-webfont.eot');
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-webfont.eot#iefix') format('embedded-opentype'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-webfont.woff2') format('woff2'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont-1.woff') format('woff'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-webfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Standard';
+	font-style: italic;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-italic-webfont.eot');
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-italic-webfont.eot#iefix') format('embedded-opentype'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-italic-webfont.woff2') format('woff2'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-italic-webfont.woff') format('woff'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-book-italic-webfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Standard';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont.eot');
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont.eot#iefix') format('embedded-opentype'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont.woff2') format('woff2'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont.woff') format('woff'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-webfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Standard';
+	font-style: italic;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-italic-webfont.eot');
+	src: url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-italic-webfont.eot#iefix') format('embedded-opentype'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-italic-webfont.woff2') format('woff2'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-italic-webfont.woff') format('woff'),
+		url('https://web.archive.org/web/20221221071014im_/http://process-rovingideas.net/wp-content/uploads/2022/11/standard-bold-italic-webfont.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
