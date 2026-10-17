@@ -48,3 +48,102 @@ body.restored-page{padding-bottom:var(--site-foot)!important;letter-spacing:0!im
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
 /* Keep the contributor biography beneath contextual notes, rather than adding a fourth grid column. */
 @media(min-width:768px){.restored-page .detail-lower>.detail-map-section{grid-column:1;grid-row:1 / span 2}.restored-page .detail-lower>section:nth-child(2){grid-column:2;grid-row:1}.restored-page .detail-lower>section:nth-child(3){grid-column:2;grid-row:2}.restored-page .detail-lower>.detail-tags{grid-column:3;grid-row:1}}
+
+
+/* V17: instruction description layout, based on the recovered detail-page screenshots. */
+@media (min-width:768px) {
+  .restored-page:has(.detail-instruction) .detail-instruction{
+    padding-top:clamp(32px,4.4vw,72px)!important;
+    padding-right:clamp(150px,15vw,245px)!important;
+  }
+  .restored-page:has(.detail-instruction) .detail-values {
+    max-width:950px!important;
+    line-height:1.39!important;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower {
+    grid-template-columns:minmax(0,37%) minmax(0,37%) minmax(120px,1fr)!important;
+    column-gap:3%!important;
+    row-gap:clamp(32px,5vw,80px)!important;
+    margin-top:clamp(72px,8vw,120px)!important;
+    align-items:start!important;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>.detail-map-section{
+    grid-column:1;grid-row:1 / span 2;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>section:nth-child(2){
+    grid-column:2;grid-row:1;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>section:nth-child(3){
+    grid-column:2;grid-row:2;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>.detail-tags{
+    grid-column:3;grid-row:1;position:sticky;top:calc(var(--site-head) + 30px);
+  }
+}
+.restored-page:has(.detail-instruction) .detail-lower .archive-context,
+.restored-page:has(.detail-instruction) .detail-lower .contributor-copy {
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  font-family:'Standard',Arial,sans-serif!important;
+  font-weight:700!important;
+  line-height:1.42!important;
+}
+.restored-page:has(.detail-instruction) .detail-lower .archive-context>div>div {
+  margin-bottom:clamp(24px,3vw,48px)!important;
+}
+.restored-page:has(.detail-instruction) .detail-lower .archive-context p,
+.restored-page:has(.detail-instruction) .detail-lower .contributor-copy p {
+  max-width:100%!important;
+  margin:0 0 16px!important;
+  overflow-wrap:break-word;
+  hyphens:auto;
+}
+.restored-page:has(.detail-instruction) .detail-lower p:empty {
+  display:none!important;
+}
+.restored-page:has(.detail-instruction) .detail-lower .archive-context a,
+.restored-page:has(.detail-instruction) .detail-lower .contributor-copy a {
+  color:#bcbcbc!important;
+  text-decoration:none;
+}
+.restored-page:has(.detail-instruction) .detail-lower a:hover {
+  text-decoration:underline!important;
+}
+.restored-page:has(.detail-instruction) .detail-map-placeholder {
+  min-height:270px;
+  width:100%;
+  max-width:none;
+  background:#c6c6c6;
+}
+.restored-page:has(.detail-instruction) .detail-values div {
+  overflow-wrap:break-word;
+}
+@media(max-width:767px){
+  .restored-page:has(.detail-instruction) .detail-lower{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    row-gap:32px!important;
+    margin-top:52px!important;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>*{
+    grid-column:1!important;
+    grid-row:auto!important;
+  }
+  .restored-page:has(.detail-instruction) .detail-lower>.detail-tags{
+    position:static!important;
+    padding-top:0!important;
+    text-align:left!important;
+  }
+}
+/* The scrolling instruction index retains its type scale; only vertical intervals change. */
+.restored-page .original-instruction-list .original-instruction-row{
+  padding-top:clamp(42.5px,6.25vh,70px)!important;
+  padding-bottom:clamp(42.5px,6.25vh,70px)!important;
+}
+@media(max-width:767px){
+  .restored-page .original-instruction-list .original-instruction-row{
+    padding-top:50px!important;
+    padding-bottom:50px!important;
+  }
+}
