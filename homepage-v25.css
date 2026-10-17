@@ -6,7 +6,7 @@ body.original-home{height:100svh!important;min-height:0!important;max-height:100
 .original-home .instruction-tools{top:auto!important;bottom:calc(50px + 7vh)!important}
 @media(max-width:767px){
  body.original-home{height:100svh!important;max-height:100svh!important}
- .original-home .instruction-stage{height:calc(100svh - 74px)!important;max-height:calc(100svh - 74px)!important;overflow:auto!important;padding:18px 18px 10px!important;scrollbar-width:none}
+ .original-home .instruction-stage{height:calc(100svh - 74px)!important;max-height:calc(100svh - 74px)!important;overflow:hidden!important;padding:18px 18px 10px!important;scrollbar-width:none}
  .original-home .instruction-stage::-webkit-scrollbar{display:none}
  .original-home .instruction-table{height:auto!important;max-height:none!important;padding:0!important;grid-template-rows:none!important}
  .original-home .instruction-value{padding-bottom:clamp(18px,4vh,38px)!important}
