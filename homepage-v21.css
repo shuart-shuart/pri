@@ -1,0 +1,37 @@
+/* V21: homepage spacing and shared footer match the interior pages. */
+@media (min-width:768px){
+  .original-home .instruction-table{
+    padding-top:clamp(55px,11vh,95px)!important;
+    grid-template-rows:repeat(3,minmax(clamp(215px,29vh,265px),auto))!important;
+  }
+  .original-home .instruction-stage{min-height:calc(100svh - 50px)!important;}
+  .original-home .instruction-tools{top:65%!important;}
+}
+.original-home .original-footer{
+  position:fixed!important;bottom:0!important;left:0!important;right:0!important;
+  z-index:40!important;height:50px!important;min-height:50px!important;
+  display:flex!important;flex-direction:row!important;align-items:center!important;
+  gap:30px!important;padding:0 3%!important;margin:0!important;
+  background:#FEFFC9!important;border-top:1px solid #e6e5ba!important;
+  white-space:normal!important;
+}
+.original-home .original-footer .footer-brand,
+.original-home .original-footer nav a{
+  font-family:'Standard',Arial,sans-serif!important;
+  font-size:15px!important;font-weight:700!important;
+  color:#bcbcbc!important;text-decoration:none!important;
+}
+.original-home .original-footer nav{display:flex!important;gap:30px!important;flex-wrap:wrap!important;}
+.original-home .original-footer .footer-brand:hover,
+.original-home .original-footer nav a:hover{color:#000!important;}
+@media(max-width:767px){
+  .original-home .original-footer{
+    height:74px!important;min-height:74px!important;flex-direction:column!important;
+    align-items:flex-start!important;justify-content:center!important;
+    gap:3px!important;padding:5px 18px!important;
+  }
+  .original-home .original-footer nav{gap:12px!important;}
+  .original-home .original-footer .footer-brand,
+  .original-home .original-footer nav a{font-size:12px!important;}
+  .original-home .instruction-tools{position:static!important;top:auto!important;}
+}
