@@ -1,0 +1,30 @@
+/* V26: stack each grey prompt label one text line above its black value. */
+.original-home .instruction-table{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-rows:repeat(6,auto)!important;
+  align-content:space-evenly!important;
+  row-gap:0!important;
+  width:min(940px,76%)!important;
+  height:calc(100svh - 85px)!important;
+  max-height:calc(100svh - 85px)!important;
+}
+.original-home .instruction-label{
+  align-self:end!important;
+  padding:0!important;
+  margin:0 0 .18em!important;
+  line-height:1.15!important;
+}
+.original-home .instruction-value{
+  align-self:start!important;
+  text-align:left!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:1.26!important;
+  width:100%!important;
+}
+@media(max-width:767px){
+ .original-home .instruction-table{width:100%!important;height:100%!important;max-height:100%!important;align-content:space-evenly!important}
+ .original-home .instruction-label{margin:0 0 .15em!important}
+ .original-home .instruction-value{padding-bottom:0!important}
+}
