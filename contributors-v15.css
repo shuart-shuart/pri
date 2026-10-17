@@ -1,0 +1,35 @@
+/* Version 15: contributor composition reconstructed from original design pages 8–9. */
+body.contributors-page{padding-bottom:var(--site-foot)!important}
+.contributors-page .archive-page{max-width:none!important;width:100%;padding:0 var(--site-edge) 130px!important;margin:0!important;box-sizing:border-box}
+.contributors-page .page-intro{display:none!important}
+.contributors-page .people-grid{display:block!important;max-width:none!important;padding-top:26px!important}
+.contributors-page .contributor{border:0!important;padding:0!important;margin:0!important;scroll-margin-top:82px}
+.contributors-page .contributor:last-child{border:0!important}
+.contributors-page .contributor-details{display:grid;grid-template-columns:minmax(240px,34%) minmax(300px,33%) minmax(130px,1fr);column-gap:clamp(20px,4vw,72px);align-items:start}
+.contributors-page .contributor-details summary{grid-column:1;list-style:none;cursor:pointer;padding:12px 0 35px!important;margin:0!important;font-family:'Standard',Arial,sans-serif!important;font-size:clamp(28px,3vw,31px)!important;line-height:1.08!important;letter-spacing:0!important;font-weight:700!important;color:#bcbcbc!important}
+.contributors-page .contributor-details summary::-webkit-details-marker{display:none}
+.contributors-page .contributor-details summary::marker{content:''}
+.contributors-page .contributor-details summary:hover,.contributors-page .contributor-details[open] summary{color:#000!important}
+.contributors-page .contributor-copy{grid-column:2;display:none;max-width:430px!important;margin:2px 0 0 0!important;padding:0!important;line-height:1.38!important}
+.contributors-page .contributor-details[open] .contributor-copy{display:block}
+.contributors-page .contributor-copy p{font-family:'Standard',Arial,sans-serif!important;font-size:clamp(14px,1.18vw,17px)!important;line-height:1.38!important;font-weight:700!important;letter-spacing:0!important;margin:0 0 18px!important}
+.contributors-page .contributor-copy p:last-child{margin-bottom:0!important}
+.contributors-page .contributor-copy a{color:#bcbcbc!important;text-decoration:none}
+.contributors-page .contributor-copy a:hover{text-decoration:underline}
+.contributors-page .jump{grid-column:3;display:none;align-self:start;justify-self:start;margin:4px 0 0 0!important;padding:0!important;font-family:'Standard',Arial,sans-serif!important;font-size:15px!important;line-height:1.2!important;font-weight:700!important;color:#bcbcbc!important;text-decoration:none!important}
+.contributors-page .contributor-details[open] .jump{display:inline-block}
+.contributors-page .jump:hover{text-decoration:underline!important}
+.contributors-page .original-page-topbar{position:sticky!important;top:0;z-index:30}
+.contributors-page .original-page-topbar .bar-current,.contributors-page .original-page-topbar .bar-search{font-size:15px!important;font-weight:700!important;color:#bcbcbc!important;text-decoration:none!important}
+.contributors-page .original-page-topbar .bar-search:hover{text-decoration:underline!important}
+.contributors-page .original-footer nav a[aria-current=page]{color:#000!important}
+.contributors-page .contributor-details summary:focus-visible,.contributors-page .jump:focus-visible{outline:2px solid #000;outline-offset:3px}
+@media(max-width:767px){
+.contributors-page .archive-page{padding:0 18px 110px!important}
+.contributors-page .people-grid{padding-top:18px!important}
+.contributors-page .contributor-details{grid-template-columns:1fr!important;column-gap:0!important}
+.contributors-page .contributor-details summary{padding:10px 0 24px!important;font-size:clamp(26px,7vw,42px)!important}
+.contributors-page .contributor-copy,.contributors-page .jump{grid-column:1!important;max-width:none!important}
+.contributors-page .contributor-copy{margin:0 0 14px!important}
+.contributors-page .jump{margin:0 0 18px!important}
+}
