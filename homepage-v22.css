@@ -1,0 +1,18 @@
+/* V22: homepage refinements while retaining the archived desktop composition. */
+@media(min-width:768px){
+ .original-home .instruction-table{
+   width:min(88%,1120px)!important;
+   grid-template-columns:29% minmax(0,71%)!important;
+   padding-top:clamp(62px,11vh,105px)!important;
+   grid-template-rows:repeat(3,minmax(clamp(200px,27vh,250px),auto))!important;
+ }
+ .original-home .instruction-label{line-height:1.22!important}
+ .original-home .instruction-value{line-height:1.31!important;text-wrap:pretty}
+ .original-home .instruction-tools{top:65%!important;right:3%!important}
+ .original-home .original-footer{height:50px!important;min-height:50px!important}
+}
+@media(max-width:767px){
+ .original-home .instruction-table{grid-template-columns:1fr!important;width:100%!important}
+ .original-home .instruction-tools{position:static!important;justify-content:flex-end!important}
+ .original-home .instruction-value{overflow-wrap:anywhere!important}
+}
