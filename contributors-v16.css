@@ -1,0 +1,17 @@
+/* V16 approved contributor layout: larger header and triple the V16 name spacing. */
+@media (min-width: 768px) {
+  body.contributors-page { --site-head: 66px; }
+  .contributors-page .original-page-topbar { height: 66px!important; font-size: 18px!important; }
+  .contributors-page .original-page-topbar .bar-current,
+  .contributors-page .original-page-topbar .bar-search { font-size: 18px!important; }
+  .contributors-page .people-grid { padding-top: 30px!important; }
+  .contributors-page .contributor-details summary { font-size: 36px!important; padding: 15px 0 192px!important; }
+  .contributors-page .contributor-copy { padding-top: 7px!important; }
+}
+@media (max-width: 767px) {
+  body.contributors-page { --site-head: 58px; }
+  .contributors-page .original-page-topbar { height: 58px!important; }
+  .contributors-page .original-page-topbar .bar-current,
+  .contributors-page .original-page-topbar .bar-search { font-size: 16px!important; }
+  .contributors-page .contributor-details summary { padding: 14px 0 120px!important; }
+}
